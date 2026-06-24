@@ -12,12 +12,21 @@
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
 
-    <div class="max-w-sm w-full bg-white rounded-3xl shadow-2xl overflow-visible pb-8 relative">
+    <!-- overflow-visible과 relative가 핵심입니다 -->
+    <div class="max-w-sm w-full bg-white rounded-3xl shadow-2xl overflow-visible relative pb-8 mt-16">
         
+        <!-- 프로필 이미지 (상단 주황색 영역과 하단 흰색 영역에 걸치게 배치) -->
+        <div class="absolute -top-16 left-1/2 transform -translate-x-1/2 z-30">
+            <div class="w-32 h-32 bg-white rounded-full border-4 border-white shadow-xl flex items-center justify-center overflow-hidden">
+                <img src="https://github.com/user-attachments/assets/b6a97fb9-031c-4b79-8c41-f9288998ec60" 
+                     alt="강호준" 
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+
         <!-- 상단: 한화손해보험 아이덴티티 영역 -->
         <div class="relative h-32 bg-gradient-to-r from-orange-600 via-orange-500 to-orange-400 overflow-hidden rounded-t-3xl">
             <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 0l10 10L0 20zM20 0l-10 10 10 10z\" fill=\"%23ffffff\" fill-opacity=\"0.4\" fill-rule=\"evenodd\"/%3E%3C/svg%3E');"></div>
-
             <div class="absolute top-4 left-5 flex items-center gap-1.5 z-10">
                 <div class="flex gap-0.5">
                     <span class="w-2.5 h-2.5 bg-white rounded-full"></span>
@@ -28,19 +37,8 @@
             </div>
         </div>
 
-        <!-- 프로필 이미지 (하단 흰색 영역 침범) -->
-        <!-- z-30을 주어 다른 요소보다 가장 위에 배치되도록 함 -->
-        <div class="absolute -top-16 left-1/2 transform -translate-x-1/2 z-30">
-            <div class="w-40 h-40 bg-white rounded-full border-4 border-white shadow-2xl flex items-center justify-center overflow-hidden">
-                <img src="https://github.com/user-attachments/assets/b6a97fb9-031c-4b79-8c41-f9288998ec60" 
-                     alt="강호준" 
-                     class="w-full h-full object-cover" 
-                     onerror="this.onerror=null; this.src='https://placehold.co/200x200/ea580c/white?text=강호준';">
-            </div>
-        </div>
-
-        <!-- 이미지 아래로 간격을 더 넓게 확보 (mt-24) -->
-        <div class="mt-24 text-center px-6">
+        <!-- 이미지 아래로 간격을 조정 -->
+        <div class="mt-20 text-center px-6">
             <h1 class="text-2xl font-bold text-gray-800">강호준</h1>
             <p class="text-orange-600 font-semibold mt-1">신인코치</p>
             <p class="text-gray-500 text-sm mt-1">한화손해보험 정발산SFP</p>
