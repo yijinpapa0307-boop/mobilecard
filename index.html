@@ -12,18 +12,20 @@
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
 
-    <div class="max-w-sm w-full bg-white rounded-3xl shadow-2xl overflow-hidden pb-8 relative">
+    <!-- 카드 컨테이너 -->
+    <div class="max-w-sm w-full bg-white rounded-3xl shadow-2xl overflow-hidden relative pb-8">
         
+        <!-- 상단 주황색 영역 -->
         <div class="relative h-48 bg-gradient-to-r from-orange-600 via-orange-500 to-orange-400">
             <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 0l10 10L0 20zM20 0l-10 10 10 10z\" fill=\"%23ffffff\" fill-opacity=\"0.4\" fill-rule=\"evenodd\"/%3E%3C/svg%3E');"></div>
-            
-            <div class="absolute top-4 left-5 flex items-center gap-1.5">
+            <div class="absolute top-4 left-5 flex items-center gap-1.5 z-10">
                 <div class="flex gap-0.5"><span class="w-2.5 h-2.5 bg-white rounded-full"></span><span class="w-2.5 h-2.5 bg-white rounded-full"></span><span class="w-2.5 h-2.5 bg-white rounded-full"></span></div>
                 <span class="text-white text-sm font-bold tracking-tight">한화손해보험</span>
             </div>
         </div>
 
-        <div class="relative -mt-20 flex justify-center z-10">
+        <!-- 프로필 사진 -->
+        <div class="flex justify-center -mt-20 z-10 relative">
             <div class="w-40 h-40 bg-white rounded-full border-4 border-white shadow-xl flex items-center justify-center overflow-hidden">
                 <img src="https://github.com/user-attachments/assets/b6a97fb9-031c-4b79-8c41-f9288998ec60" 
                      alt="강호준" 
@@ -31,17 +33,20 @@
             </div>
         </div>
 
+        <!-- 정보 영역 -->
         <div class="mt-4 text-center px-6">
             <h1 class="text-2xl font-bold text-gray-800">강호준</h1>
             <p class="text-orange-600 font-semibold mt-1">신인코치</p>
             <p class="text-gray-500 text-sm mt-1">한화손해보험 정발산SFP</p>
         </div>
 
+        <!-- 버튼 -->
         <div class="grid grid-cols-2 gap-4 px-6 mt-8">
             <a href="tel:01064470615" class="bg-orange-600 text-white py-3 rounded-xl font-semibold shadow-md hover:bg-orange-700 transition flex items-center justify-center">전화하기</a>
             <a href="sms:01064470615" class="bg-gray-800 text-white py-3 rounded-xl font-semibold shadow-md hover:bg-gray-900 transition flex items-center justify-center">문자하기</a>
         </div>
 
+        <!-- 주요 서비스 -->
         <div class="px-6 py-8">
             <p class="text-xs text-gray-400 mb-6 text-center italic leading-relaxed">
                 "13년간의 응급의료센터 경험으로,<br>위기 속에서도 가족의 일상을 지키는<br>든든한 보험설계사입니다."
@@ -54,7 +59,19 @@
                 <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> 자녀/태아 보험 상담</li>
             </ul>
         </div>
+
+        <!-- SNS 영역 -->
+        <div class="px-6 pb-6">
+            <h3 class="text-gray-800 font-bold mb-4 border-b pb-2">SNS</h3>
+            <ul class="space-y-3 text-sm">
+                <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> <a href="https://www.instagram.com/joony_ho/" target="_blank" class="text-blue-600 hover:underline">인스타그램</a></li>
+                <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> <a href="https://www.youtube.com/@yijinpapa0307/shorts" target="_blank" class="text-blue-600 hover:underline">유튜브</a></li>
+                <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> <a href="https://www.tiktok.com/@hojoomoney916" target="_blank" class="text-blue-600 hover:underline">틱톡</a></li>
+                <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> <a href="https://litt.ly/hojoomoney916" target="_blank" class="text-blue-600 hover:underline">홈페이지 (리틀리)</a></li>
+            </ul>
+        </div>
         
+        <!-- 상담 문의 버튼 -->
         <div class="px-6 py-4">
             <a href="https://form.naver.com/response/wFcNxvNvRItS93bc8NdCJA" target="_blank" class="block w-full bg-orange-600 text-white text-center py-4 rounded-xl font-bold shadow-lg hover:bg-orange-700 transition">상담 문의하기</a>
         </div>
